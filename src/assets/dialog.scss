@@ -1,0 +1,91 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background: rgba(#21252B, .4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dialog {
+    background: #FFF;
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+
+    &__header {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 20px;
+    }
+
+    &__button-close {
+        width: 14px;
+        height: 14px;
+    }
+
+    &__button-icon {
+        background: url('./assets/images/cross.svg') no-repeat center / cover;
+        height: 100%;
+        width: 100%;
+        display: block;
+    }
+
+    &__title {
+        font-family: 'Manrope', sans-serif;
+        font-size: 20px;
+        line-height: 1.3;
+        font-weight: 700;
+        color: #111827;
+        margin-bottom: 20px;
+    }
+
+    &__user {
+        font-size: 14px;
+        line-height: 1.5;
+        font-weight: 600;
+        color: #21252B;
+        margin-bottom: 10px;
+    }
+
+
+    .select__label,
+    &__label {
+        color: #989FAB;
+        font-size: 14px;
+        letter-spacing: 0.005em;
+        margin-bottom: 5px;
+    }
+
+    &__input {
+        border-radius: 13px;
+        padding: 13px;
+        border: 1px solid #E9EAEC;
+        color: #989FAB;
+        font-size: 14px;
+        letter-spacing: 0.005em;
+        margin-bottom: 20px;
+    }
+
+    &__button {
+        border-radius: 12px;
+        padding: 12px;
+        font-weight: 500;
+        font-size: 16px;
+        color: #FFF;
+        letter-spacing: 0.005em;
+        background: #0CAF60;
+
+        &:disabled {
+            opacity: .3;
+        }
+    }
+}

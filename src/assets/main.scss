@@ -1,0 +1,68 @@
+@import './reset.scss';
+@import './dialog.scss';
+
+:root {
+  --color-background: #FAFAFA;
+  --color-font-main: #EFF3FF;
+  --color-active: #2D76F9;
+  --color-grey: #9AA8BA;
+  --color-error: #E83B3B;
+  --color-success: #8FD97D;
+}
+
+body, html {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background: #FFF;
+  overflow-x: hidden;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-grey);
+  border: none;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-grey);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: var(--color-grey);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-font-main);
+  border: none;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: var(--color-font-main);
+}
+
+::-webkit-scrollbar-track:active {
+  background: var(--color-font-main);
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
